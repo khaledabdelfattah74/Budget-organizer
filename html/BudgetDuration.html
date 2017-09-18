@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="fonts/DroidSans-Bold.ttf" rel="stylesheet">
+	<link href="fonts/DroidSans.ttf" rel="stylesheet">
+    <link href="fonts/Lobster-Regular.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet"  href="css/styles.css">
+	<title>Budget Organizer</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcontent" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="WelcomePage.html"><i class="fa fa-briefcase" aria-hidden="true"></i>
+ Ma7faztk</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="navbarcontent">
+      <ul class="nav navbar-nav">
+        <li><a href="News.html">
+        <i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a></li>
+        <li  class="active" ><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> budgets<span class="sr-only">(current)</span></a></li>
+        <li><a href="WelcomePage.html">Logout</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Policies</a></li>
+            <li><a href="Contactus.html">Contact us</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="About.html">About</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-->
+</nav>
+<div class="container">
+	
+	<div class="row">
+		<div class="col-md-3 budgetslist">
+			<h1>Budgets</h1>
+				<div class="row">
+					<div class="col-md-12 budgetitem budgetitemactive text-center">
+					
+						<a href="#"><h3>budget 1</h3></a>
+
+					</div>
+					<div class="col-md-12 budgetitem text-center">
+					
+						<a href="#"><h3>budget 2</h3></a>
+
+					</div>
+					<div class="col-md-12 text-center budgetitem">
+					
+						<a href="#"><h3>budget 3</h3></a>
+
+					</div>
+					<div class="col-md-12 budgetitem text-center">
+					
+						<a href="#"><h3>budget 4</h3></a>
+
+					</div>
+
+					<div class="row" style="padding-top: 10px">
+						<button type="button" class="btn btn-default center-block submitbutton" data-toggle="modal" data-target="#modalbox">Create new</button>
+						<!-- Button trigger modal -->
+					
+
+						<!-- Modal -->
+						<div class="modal fade" id="modalbox" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      	<h2 class="modal-title" id="exampleModalLabel">Create a budget</h2>
+						      </div>
+						      <div class="modal-body">
+						       <form role= "form" class="form-group">
+									<label for="budgetname">Budget name :</label>
+									<input class="form-control signform" id="budgetname" type="text"  name="">
+									<label for = "category">Category  :</label>
+									<input type="text" id="category" class="form-control signform" name="">
+								</form>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn btn-default">Create Budget</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="row" style="padding-top: 10px">
+						<button class="btn btn-default center-block submitbutton">Clear all</button>
+					</div>
+				</div>
+		
+			</div>
+			<div class="col-md-8 col-md-offset-1 budgetsinfo">
+			<h1 class="text-center">Budget 1</h1>
+			<div class="row">		
+				<div class="col-md-12 text-center budgetsinfoheaders">
+					<h2 class="text-center ">Your periodic budget</h2>	
+			</div>
+				<div class="row">
+					<div class="col-md-5 budgetstats budgetstatsdecrease text-center">
+						
+							<p>Total number spendings:</p><h3>$6442</h3>
+
+					</div>
+					<div class="col-md-6 budgetstats col-md-offset-1 budgetstatsincrease text-center">
+							<p>Total periodic income:</p><h3>$400</h3>
+					</div>
+				</div>
+			<div class="row">		
+				<div class="col-md-12 text-center budgetsinfoheaders">
+				
+				  <h2>Your spendings</h2>
+				</div>
+			</div>
+			 <table class=" table tablespendings originaltable">
+				  <thead>
+				    <tr>
+				      <th>Product</th>
+				      <th>Date started</th>
+				      <th>duration</th> 
+				      <th>amount</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td scope="row">mouse</td>
+				      <td>19-03-2017</td>
+				      <td>Monthly</td> 
+				      <td>$50</td>
+				    </tr>
+				    <tr>
+				      <td scope="row">Car Garage</td>
+				      <td>18-03-2017</td>
+				      <td>daily</td>
+				      <td>$5</td>
+				    </tr>
+				  </tbody>
+				</table>
+				<table class="table tablespendings visibletable">
+				  <thead>
+				    <tr class= "text-center">
+				      <th class= "text-center">Product</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr class= "text-center">
+				      <td><strong>product :</strong> mouse
+				      <br><strong> date started  :</strong> 19-03-2017
+				      <br><strong> duration   :</strong> monthly
+				      <br><strong> price :</strong> $5</td>
+				    </tr>
+				    <tr class= "text-center">
+				      <td><strong>product :</strong> mouse
+				      <br><strong> date started  :</strong> 19-03-2017
+				      <br><strong> duration   :</strong> monthly
+				      <br><strong> price :</strong> $5</td>
+				    </tr>
+				    <tr class= "text-center">
+				      <td><strong>product :</strong> mouse
+				      <br><strong> date started  :</strong> 19-03-2017
+				      <br><strong> duration   :</strong> monthly
+				      <br><strong> price :</strong> $5</td>
+				    </tr>
+				  </tbody>
+				</table>
+				<div class="row">		
+				<div class="col-md-12 text-center budgetsinfoheaders">
+				
+				  <h2>Your income</h2>
+				</div>
+			</div>
+			 <table class="table tableincome originaltable">
+				  <thead>
+				    <tr>
+				      <th>Source</th>
+				      <th>Date started</th>
+				      <th>Duration</th>
+				      <th>Amount</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr >
+				      <td scope="row">Salery</td>
+				      <td>18-03-2017</td>
+				      <td>Monthly</td>
+				      <td>$5000</td>
+				     </tr>
+				    <tr>
+				      <td scope="row">Web Design</td>
+				      <td>18-03-2017</td>
+				      <td>daily</td>
+				      <td>$100</td>
+				    </tr>
+				    <tr>
+				      <td scope="row">Appartment rent</td>
+				      <td>18-03-2017</td>
+				      <td>Monthly</td>
+				      <td >$1000</td>
+				    </tr>
+				  </tbody>
+				</table>
+				<table class="table tableincome visibletable">
+				  <thead>
+				    <tr class= "text-center"> 
+				      <th class= "text-center">Sources</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr class= "text-center">
+				      <td scope="row"><strong>Salery</strong>
+				      <br><strong>Date Started:</strong>18-03-2017
+				      <br><strong>Duration :</strong>monthly
+				      <br><strong>Price:</strong>$5000</td>
+				     </tr>
+				    <tr class= "text-center">
+				      <td scope="row"><strong>Web design</strong>
+				      <br><strong>Date :</strong>18-03-2017
+				      <br><strong>Duration :</strong>monthly
+				      <br><strong>Price:</strong>$100</td>
+				    </tr>
+				    <tr class= "text-center">
+				      <td scope="row"><strong>Appartment rent</strong>
+				      <br><strong>Date :</strong>18-03-2017
+				      <br><strong>Duration :</strong>monthly
+				      <br><strong>Price:</strong>$1000</td>
+				    </tr>
+				  </tbody>
+				</table>
+				<div class="row">		
+				<div class="col-md-12 text-center budgetsinfoheaders">
+				
+				  <h2>Options</h2>
+				</div>
+			</div>
+			<div class="row">		
+				<div class="col-md-4 budgetbuttons">
+					<button class="btn btn-success incomebutton center-block" data-toggle="modal" data-target="#Addincome">Add income</button>
+					<div class="modal fade" id="Addincome" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h2 class="modal-title" id="exampleModalLabel">Add income</h2>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						       <form role= "form" class="form-group">
+									<label for="source">Income source :</label>
+									<input class="form-control signform" id="source" type="text"  name="">
+									<label for = "Value">Amount  :</label>
+									<input type="text" id="Value" class="form-control signform" name="">
+									<label for="sel1">Select list:</label>
+									 	<select class="form-control durationlist selectpicker">
+										  <option class="durationlistelement">Annual</option>
+										  <option class="durationlistelement">Monthly</option>
+										  <option class="durationlistelement">Daily</option>
+										  <option class="durationlistelement">Each hour</option>
+									  </select>
+									<label for = "date">Date Started :</label>
+									<input type="date" id="date" class="form-control signform" name="">
+									 
+								</form>
+
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn btn-default">Add</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+				</div>
+				<div class="col-md-4 budgetbuttons">
+					
+					 <button class="btn btn-primary center-block" data-toggle="modal" data-target="#buy">Add periodic spendings</button>
+					<div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h2 class="modal-title" id="exampleModalLabel">Buy an item</h2>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						       <form role= "form" class="form-group">
+									<label for="Choice">Service or product :</label>
+									<input class="form-control signform" id="Choice" type="text"  name="">
+									<label for = "Value">value  :</label>
+									<input type="text" id="Value" class="form-control signform" name="">
+									<label for="sel1">Select list:</label>
+									 	<select class="form-control durationlist selectpicker">
+										  <option class="durationlistelement">Annual</option>
+										  <option class="durationlistelement">Monthly</option>
+										  <option class="durationlistelement">Daily</option>
+										  <option class="durationlistelement">Each hour</option>
+									  </select>
+									<label for = "date">Date Started :</label>
+									<input type="date" id="date" class="form-control signform" name="">
+									  
+									  
+									  
+
+								</form>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn btn-default">Add Spending</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+				</div>
+				<div class="col-md-4  budgetbuttons">
+				
+				  	<button class="btn btn-danger center-block" data-toggle="modal" data-target="#remove">Remove</button>
+					<div class="modal fade" id="remove" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h2 class="modal-title" id="exampleModalLabel">Remove</h2>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	<form role= "form" class="form-group">
+									<label for="Choice">Service or product :</label>
+									<input class="form-control signform" id="Choice" type="text"  name="">
+								    <label for="sel1">Income or spending:</label>
+									 	<select class="form-control durationlist selectpicker">
+										  <option class="durationlistelement">Income</option>
+										  <option class="durationlistelement">Spending</option>
+										  
+									  </select>
+								</form>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        <button type="button" class="btn btn-default">Remove Budget</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>			
+				</div>
+				<div class="col-md-12  budgetbuttons">
+					  	<a href="budgets.html"><button class="btn btn-primary form-control">Return to budgets</button></a>
+				</div>
+			</div>
+			</div>
+	</div>
+
+
+</div>
+<script src="js/html5shiv.min.js"></script>
+ <script src="js/respond.min.js"></script>
+<script src="js/jquery-3.1.1.min.js">	</script>
+ <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

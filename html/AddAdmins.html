@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="fonts/DroidSans-Bold.ttf" rel="stylesheet">
+  <link href="fonts/DroidSans.ttf" rel="stylesheet">
+  <link href="fonts/Lobster-Regular.ttf" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet"  href="css/styles.css">
+  <title>Add Admins</title>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcontent" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="index.php"><i class="fa fa-briefcase" aria-hidden="true"></i>
+       Ma7faztk</a>
+     </div>
+
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse navbar-right" id="navbarcontent">
+      <ul class="nav navbar-nav">
+        <li ><a href="News.php">
+          <i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a></li>
+          <li ><a href="Budgets.php">
+            <i class="fa fa-envelope" aria-hidden="true"></i> budgets</a></li>
+            <li><a href="/addAdmins.php?logout">Logout</a></li><li ><a href="/NewsInputForAdmins.php">Add News</a></li><li ><a href="/AddAdmins.php">Add Admins</a></li>          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Policies</a></li>
+                <li><a href="ContactUs.php">Contact us</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="About.php">About</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  <div class="col-md center-block col-md-offset-1 budgetslist editForAdmins">
+    <h1 class="text-center changeprofconfirm editForAdminsheader">Add Admins</h1>
+    <table class="table tableincome">
+      <thead>
+        <tr>
+          <th>User Name</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Data Joined</th>
+          <th>Authorities</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+          <td scope="row">ayman</td>
+          <td >ayman</td>
+          <td>ahmed</td>
+          <td>basbosearn@gmail.com</td>
+          <td>18</td>
+          <td>2017-04-21 22:34:21</td>
+          
+          <td><form role= "form" method="POST" action="/addAdmins.php">
+          <input type="hidden" name="AdminID" value="3"><button type="submit" class="btn btn-default center-block submitbutton" name="SetAdmin">Set Admin</button></form></td></tr>
+          <tr>
+          <td scope="row">biuasd</td>
+          <td >asdasudi</td>
+          <td>bdasjasiudb</td>
+          <td>ayman.a.samy.m@gmail.com</td>
+          <td>121</td>
+          <td>2017-04-21 22:35:04</td>
+          
+          <td><form role= "form" method="POST" action="/addAdmins.php">
+          <input type="hidden" name="AdminID" value="4"><button type="submit" class="btn btn-default center-block submitbutton" name="SetAdmin">Set Admin</button></form></td></tr>      </tbody>
+    </table>
+  </div>
+</body>
+</html>
